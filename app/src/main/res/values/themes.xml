@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.GenesisManager" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
@@ -12,12 +12,10 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:windowBackground">@drawable/splash_background</item>
         <item name="android:listDivider">@color/listDivider</item>
     </style>
 
     <style name="Theme.GenesisManager" parent="Base.Theme.GenesisManager" />
-
 
 
     <color name="primary">#FF9800</color>
@@ -86,5 +84,14 @@
         <item name="android:statusBarColor">@color/quinto</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="Theme.GenesisManager.Fullscreen" parent="Theme.GenesisManager">
+        <item name="android:actionBarStyle">
+            @style/Widget.Theme.GenesisManager.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="fullscreenBackgroundColor">@color/black</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
 </resources>

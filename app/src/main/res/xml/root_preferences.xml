@@ -1,0 +1,11 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Eventos">
+
+        <Preference app:key="key_works"
+            app:title="Nombres">
+            <intent app:action="android.intent.action.VIEW" />
+        </Preference>
+
+    </PreferenceCategory>
+</PreferenceScreen>

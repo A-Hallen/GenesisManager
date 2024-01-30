@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_margin="40dp"
+        android:paddingTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nuevo_tipo_de_trabajo"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:fontFamily="@font/biotif_bold" />
+
+        <EditText
+            android:id="@+id/edit"
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:singleLine="true"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="14sp"
+            android:importantForAutofill="no"
+            android:fontFamily="@font/biotif_regular"
+            android:inputType="text"
+            tools:text="kjaldjasldk 23askd "
+            android:background="@drawable/edit_bg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="20dp" />
+
+        <codes.side.andcolorpicker.rgb.RGBColorPickerSeekBar
+            android:id="@+id/redSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            app:rgbMode="red" />
+
+        <codes.side.andcolorpicker.rgb.RGBColorPickerSeekBar
+            android:id="@+id/greenSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            app:rgbMode="green" />
+
+        <codes.side.andcolorpicker.rgb.RGBColorPickerSeekBar
+            android:id="@+id/blueSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            app:rgbMode="blue" />
+
+        <TextView
+            android:id="@+id/guardar"
+            android:text="@string/guardar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/dialog_btn"
+            android:fontFamily="@font/biotif_medium"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="20dp" />
+    </LinearLayout>
+
+
+</FrameLayout>

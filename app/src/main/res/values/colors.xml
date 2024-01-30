@@ -9,6 +9,16 @@
     <color name="blue_light">#E6EBF3</color>
     <color name="blue_light1">#CDD5DF</color>
 
+    <color name="red_orange">#E64A19</color>
+    <color name="soft_gray2">#E6E6E6</color>
+    <color name="gray1">#686868</color>
+    <color name="red">#FF1100</color>
+    <color name="grey">#808080</color>
+
+    <color name="alta">#D50000</color>
+    <color name="media">#2962FF</color>
+    <color name="baja">#64DD17</color>
+
     <!-- Paleta 1 -->
     <color name="primero">#234191</color>
     <color name="segundo">#2985C7</color>
@@ -29,4 +39,9 @@
     <color name="middlegray">#414242</color>
     <color name="gray">#222222</color>
     <color name="darkgray">#1C1C1C</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
 </resources>

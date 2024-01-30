@@ -10,5 +10,13 @@
         android:name="com.hallen.genesismanager.ui.fragments.HomeViewPagerFragment"
         android:label="@string/home"
         tools:layout="@layout/fragment_home_view_pager" >
+        <action
+            android:id="@+id/action_homeViewPagerFragment_to_menu_settings"
+            app:destination="@id/menu_settings" />
     </fragment>
+
+    <fragment
+        android:id="@+id/menu_settings"
+        android:name="com.hallen.genesismanager.ui.fragments.SettingsFragment"
+        android:label="@string/settings"/>
 </navigation>

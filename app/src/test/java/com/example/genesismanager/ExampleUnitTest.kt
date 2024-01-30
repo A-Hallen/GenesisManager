@@ -1,7 +1,7 @@
 package com.example.genesismanager
 
 import org.junit.Test
-
+import java.time.LocalDate
 import java.util.Date
 
 data class Person(
@@ -27,7 +27,6 @@ class DepartamentoComercial(venta: Long, ciudad: String): Empleado() {
 class Gerencia(pais: String): Empleado() {
 
 }
-
 
 
 class ExampleUnitTest {
@@ -71,8 +70,15 @@ class ExampleUnitTest {
         return salario + bonos
     }
 
+    @Test
+    fun littleTest(){
+        val nacimiento = java.sql.Date(1997, 9, 19)
+        val edad = obtenerEdad(nacimiento)
+        println("edad: $edad")
+    }
+
     private fun obtenerEdad(date: Date): Int{
-        return date.year
+        return LocalDate.now().year - date.year
     }
 
     private fun isManOrNot(id: Long): Boolean {
